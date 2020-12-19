@@ -7,4 +7,7 @@ git branch nama_branch
 Pindah branch : 
 git checkout nama_branch
 
+Cek branch :
+git branch
+
 *selalu gunakan git fetch sebelum memulai sesuatu, untuk merefresh git nya
