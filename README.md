@@ -1,4 +1,4 @@
-# pemweb
+# SISTA (SISTEM INFORMASI SEMINAR TUGAS AKHIR)
 RULES: 
 Clone Project : https://github.com/toniyansyah4/pemweb.git
 
