@@ -1,4 +1,5 @@
 # pemweb
+RULES: 
 Clone Project : https://github.com/toniyansyah4/pemweb.git
 
 Bikin branch baru :
@@ -11,3 +12,16 @@ Cek branch :
 git branch
 
 *selalu gunakan git fetch sebelum memulai sesuatu, untuk merefresh git nya
+
+
+PROJECT DESCRIPTION:
+
+SISTA (SISTEM INFORMASI SEMINAR TUGAS AKHIR) 
+PEMROGRAMAN WEB KELOMPOK 5 
+
+
+Anggota Kelompok:
+- Toniyansyah Wahyudi
+- Habibi
+- Abdulloh Fahmi
+- Muhammad Nasoha Muntaha
