@@ -5,8 +5,10 @@ const signIn = document.querySelector(".sign-in");
 signIn.addEventListener("click", function (e) {
   e.preventDefault();
   if (username.value == "admin" && password.value == 12345) {
-    alert("Login Sukses");
+    window.location.href = "../pages/admin/list-seminar.html";
   } else {
     alert("Login Gagal");
+    username.value = "";
+    password.value = "";
   }
 });
