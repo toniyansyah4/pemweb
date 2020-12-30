@@ -1,0 +1,10 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Style to change separator  */
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+}
