@@ -4,62 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../assets/css/login.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="title mt-4 text-center">
-            Sistem Informasi Seminar Tugas Akhir - SISTA
+      <header class="header mt-3">
+        <nav class="navigation">
+          <div class="title">
+            <h2 class="text-title">SISTA</h2>
+          </div>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Jadwal</a></li>
+            <li><a href="admin/list-seminar.html">Daftar Seminar</a></li>
+            <li><a href="">Berita</a></li>
+          </ul>
+
+          <div class="menu-toggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </header>
+      <main class="main-content">
+        <div class="subtitle">
+          <h1>
+            Sistem Informasi <br />
+            Seminar Tugas Akhir
           </h1>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 mt-3">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><a href="#">Jadwal</a></li>
-              <li class="breadcrumb-item"><a href="#">Daftar Seminar</a></li>
-              <li class="breadcrumb-item"><a href="#">Berita</a></li>
-            </ol>
-          </nav>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <h5 class="text-center mt-3">Login</h5>
-        </div>
-      </div>
-      <div class="row mt-4">
-        <div class="col-md-12">
-          <div class="login w-50 mx-auto">
-            <form>
-              <div class="form-group mb-3">
-                <label>Username :</label>
-                <input
-                  type="text"
-                  class="username form-control form-control-sm"
-                />
-              </div>
-              <div class="form-group mb-5">
-                <label>Password :</label>
-                <input
-                  type="password"
-                  class="password form-control form-control-sm"
-                />
-              </div>
-              <div>
-                <button type="submit" class="btn btn-success sign-in">
-                  Sign In
-                </button>
-              </div>
-            </form>
+        <div class="login">
+          <div class="left-side">
+            <img class="img-thumb" src="../assets/images/login.png" alt="" />
           </div>
+          <form class="right-side">
+            <h4 class="text-center login-title">Login</h4>
+            <div class="form-group mb-4">
+              <label><i class="fas fa-user"></i> Username</label>
+              <input type="text" class="username" />
+            </div>
+            <div class="form-group mb-4">
+              <label><i class="fas fa-key"></i> Password</label>
+              <input type="password" class="password" />
+            </div>
+            <div>
+              <button type="submit" class="sign-in">Sign In</button>
+            </div>
+          </form>
         </div>
-      </div>
+      </main>
     </div>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/auth.js"></script>
