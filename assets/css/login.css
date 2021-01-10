@@ -1,0 +1,267 @@
+/* Variable */
+:root {
+  --c-primary-color: #f2860c;
+  --c-secondary-color: #002147;
+  --c-font-quicksand: "Quicksand", sans-serif;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--c-secondary-color);
+  overflow-x: hidden;
+}
+
+.container {
+  font-family: var(--c-font-quicksand);
+  /* height: 100px; */
+}
+
+.text-title {
+  color: white;
+  margin-right: 300px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  color: white;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  /* padding: 14px 10px; */
+  color: white;
+  transition: 0.3s;
+  font-size: 0.8em;
+}
+
+.navigation ul li a:hover {
+  color: var(--c-primary-color);
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  /* background-color: black; */
+  justify-content: space-between;
+  width: 40%;
+  padding: 14px;
+}
+
+.navigation ul li {
+  list-style: none;
+  display: inline;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.subtitle {
+  margin-left: -20px;
+  margin-right: 30px;
+  color: var(--c-primary-color);
+  display: flex;
+  align-items: center;
+}
+
+.login {
+  width: 50em;
+  height: 25em;
+  background-color: white;
+  padding: 50px;
+  padding-left: 0px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 25px;
+  box-shadow: 0px 0px 8px rgb(100, 100, 100);
+}
+
+.left-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-thumb {
+  width: 15em;
+}
+
+.login-title {
+  margin-bottom: 40px;
+}
+
+input {
+  display: block;
+  /* width: 100%; */
+  height: 35px;
+  background: transparent;
+  font-size: 22px;
+  color: #555555;
+  line-height: 1.2;
+  padding: 0 2px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #333;
+  overflow: visible;
+  transition: 0.3s;
+  animation: moveRight 0.75s 1 forwards;
+}
+
+.form-group:hover input {
+  border-bottom: 2px solid var(--c-primary-color);
+}
+
+.sign-in {
+  background-color: var(--c-secondary-color);
+  width: 10em;
+  height: 3em;
+  border: none;
+  color: white;
+  border-radius: 30px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.sign-in:hover {
+  background-color: var(--c-primary-color);
+  color: var(--c-secondary-color);
+}
+
+/* Hamburger menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: white;
+  transition: all 0.5s;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -6px;
+  top: -4px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 100;
+}
+
+/* Hamburger menu animation */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+/* Ketika checkbox di check maka cari sibling/saudaranya yaitu anak kedua */
+.menu-toggle input:checked ~ span:nth-child(2) {
+  background-color: white;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  background-color: white;
+  transform: rotate(-45deg);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+/* Responsive */
+/* Tablet mode */
+@media screen and (max-width: 768px) {
+  .navigation ul {
+    width: 50%;
+  }
+
+  .navigation ul li {
+    margin-right: 10px;
+  }
+}
+
+/* Mobile mode */
+@media screen and (max-width: 576px) {
+  .navigation ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 50%;
+    flex-direction: column;
+    background-color: var(--c-primary-color);
+    align-items: center;
+    /* justify-content: space-between; */
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+  .navigation ul.slide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .navigation ul li a:hover {
+    color: var(--c-secondary-color);
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+  .subtitle {
+    display: none;
+  }
+  .left-side {
+    display: none;
+  }
+
+  .login {
+    padding-left: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .navigation {
+    padding: 30px;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
