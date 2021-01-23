@@ -35,6 +35,59 @@
         color: #221122;
         background-color: #0dcaf0;
     }
+
+    .color-primary {
+        color: var(--c-primary-color);
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: var(--c-secondary-color);
+        color: #ffffff;
+    }
+
+    .table-hover tbody tr:hover td:first-child {
+        border-left: 6px solid var(--c-primary-color);
+    }
+
+    .dataTables_wrapper .dataTables_paginate a.paginate_button,
+    .dataTables_wrapper .dataTables_paginate a.paginate_button.disabled{
+        border-color: #dee2e6;
+        margin-left: -1px;
+    }
+
+    .dataTables_wrapper .dataTables_paginate a.paginate_button:hover,
+    .dataTables_wrapper .dataTables_paginate a.paginate_button.current:hover,
+    .dataTables_wrapper .dataTables_paginate a.paginate_button.disabled:hover {
+        color: #ffffff!important;
+        background: var(--c-secondary-color);
+        border-color: var(--c-secondary-color);
+    }
+
+    .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+        border-color: #dee2e6;
+        background: unset;
+    }
+
+    .card-detail-seminar {
+        background-color: var(--c-secondary-color);
+        border-radius: 10px;
+        padding: 50px 25px;
+        color: #ffffff;
+    }
+
+    .card.card-detail-seminar span {
+        font-size: 18px;
+    }
+
+    .btn-custom {
+        border-color: var(--c-secondary-color);
+        color: var(--c-secondary-color);
+    }
+
+    .btn-custom:hover {
+        border-color: var(--c-secondary-color);
+        background: var(--c-secondary-color);
+    }
     
     @media (max-width: 576px) {
         .logo {
