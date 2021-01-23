@@ -25,3 +25,16 @@ body {
     width: unset;
     text-align: left !important;
 }
+
+.color-primary {
+    color: var(--c-primary-color);
+}
+
+.table-hover tbody tr:hover {
+    background-color: var(--c-secondary-color);
+    color: #ffffff;
+}
+
+.table-hover tbody tr:hover td:first-child {
+    border-left: 6px solid var(--c-primary-color);
+}
