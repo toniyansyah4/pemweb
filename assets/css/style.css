@@ -1,107 +1,107 @@
-    html,
-    body {
-        padding: 0;
-        margin: 0;
-    }
-    /* Style to change separator  */
-    
-    .breadcrumb-item+.breadcrumb-item::before {
-        content: ">";
-    }
-    
-    .form-daftar-seminar {
-        border-style: solid;
-        border-width: 3px;
-        padding: 0 1.4em 1.4em 1.4em !important;
-        margin: 0 0 1.5em 0 !important;
-        -webkit-box-shadow: 0px 0px 0px 0px #000;
-        box-shadow: 0px 0px 0px 0px #000;
-    }
-    
-    .legend-daftar-seminar {
-        float: unset;
-        width: unset;
-        text-align: left !important;
-    }
-    
-    .logo {
-        max-width: 150px;
-        margin-right: 15px;
-    }
-    
-    .nav-link:hover {
-        text-decoration: underline;
-        font-style: italic;
-        color: #221122;
-        background-color: #0dcaf0;
-    }
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+/* Style to change separator  */
 
-    .color-primary {
-        color: var(--c-primary-color);
-    }
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+}
 
-    .table-hover tbody tr:hover {
-        background-color: var(--c-secondary-color);
-        color: #ffffff;
-    }
+.form-daftar-seminar {
+  border-style: solid;
+  border-width: 3px;
+  padding: 0 1.4em 1.4em 1.4em !important;
+  margin: 0 0 1.5em 0 !important;
+  -webkit-box-shadow: 0px 0px 0px 0px #000;
+  box-shadow: 0px 0px 0px 0px #000;
+}
 
-    .table-hover tbody tr:hover td:first-child {
-        border-left: 6px solid var(--c-primary-color);
-    }
+.legend-daftar-seminar {
+  float: unset;
+  width: unset;
+  text-align: left !important;
+}
 
-    .dataTables_wrapper .dataTables_paginate a.paginate_button,
-    .dataTables_wrapper .dataTables_paginate a.paginate_button.disabled{
-        border-color: #dee2e6;
-        margin-left: -1px;
-    }
+.logo {
+  max-width: 150px;
+  margin-right: 15px;
+}
 
-    .dataTables_wrapper .dataTables_paginate a.paginate_button:hover,
-    .dataTables_wrapper .dataTables_paginate a.paginate_button.current:hover,
-    .dataTables_wrapper .dataTables_paginate a.paginate_button.disabled:hover {
-        color: #ffffff!important;
-        background: var(--c-secondary-color);
-        border-color: var(--c-secondary-color);
-    }
+.nav-link:hover {
+  text-decoration: underline;
+  font-style: italic;
+  color: #221122;
+  background-color: #0dcaf0;
+}
 
-    .dataTables_wrapper .dataTables_paginate .paginate_button.current {
-        border-color: #dee2e6;
-        background: unset;
-    }
+.color-primary {
+  color: var(--c-primary-color);
+}
 
-    .card-detail-seminar {
-        background-color: var(--c-secondary-color);
-        border-radius: 10px;
-        padding: 50px 25px;
-        color: #ffffff;
-    }
+.table-hover tbody tr:hover {
+  background-color: var(--c-secondary-color);
+  color: #ffffff;
+}
 
-    .card.card-detail-seminar span {
-        font-size: 18px;
-    }
+.table-hover tbody tr:hover td:first-child {
+  border-left: 6px solid var(--c-primary-color);
+}
 
-    .btn-custom {
-        border-color: var(--c-secondary-color);
-        color: var(--c-secondary-color);
-    }
+.dataTables_wrapper .dataTables_paginate a.paginate_button,
+.dataTables_wrapper .dataTables_paginate a.paginate_button.disabled {
+  border-color: #dee2e6;
+  margin-left: -1px;
+}
 
-    .btn-custom:hover {
-        border-color: var(--c-secondary-color);
-        background: var(--c-secondary-color);
-    }
-    
-    @media (max-width: 576px) {
-        .logo {
-            max-width: 100px;
-            margin-right: 0px;
-        }
-        .color-primary {
-            color: var(--c-primary-color);
-        }
-        .table-hover tbody tr:hover {
-            background-color: var(--c-secondary-color);
-            color: #ffffff;
-        }
-        .table-hover tbody tr:hover td:first-child {
-            border-left: 6px solid var(--c-primary-color);
-        }
-    }
+.dataTables_wrapper .dataTables_paginate a.paginate_button:hover,
+.dataTables_wrapper .dataTables_paginate a.paginate_button.current:hover,
+.dataTables_wrapper .dataTables_paginate a.paginate_button.disabled:hover {
+  color: #ffffff !important;
+  background: var(--c-secondary-color);
+  border-color: var(--c-secondary-color);
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  border-color: #dee2e6;
+  background: unset;
+}
+
+.card-detail-seminar {
+  background-color: var(--c-secondary-color);
+  border-radius: 10px;
+  padding: 50px 25px;
+  color: #ffffff;
+}
+
+.card.card-detail-seminar span {
+  font-size: 18px;
+}
+
+.btn-custom {
+  border-color: var(--c-secondary-color);
+  color: var(--c-secondary-color);
+}
+
+.btn-custom:hover {
+  border-color: var(--c-secondary-color);
+  background: var(--c-secondary-color);
+}
+
+@media (max-width: 576px) {
+  .logo {
+    max-width: 100px;
+    margin-right: 0px;
+  }
+  .color-primary {
+    color: var(--c-primary-color);
+  }
+  .table-hover tbody tr:hover {
+    background-color: var(--c-secondary-color);
+    color: #ffffff;
+  }
+  .table-hover tbody tr:hover td:first-child {
+    border-left: 6px solid var(--c-primary-color);
+  }
+}
