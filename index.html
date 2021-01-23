@@ -6,10 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css//style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <img src="assets/images/logo-title2.png" alt="title" class="logo" />
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="jadwal-seminar.html">Jadwal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="daftar_seminar.html">Daftar Seminar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Berita</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <header class="py-8">
             <div class="row">
@@ -18,19 +48,40 @@
                         <h1>Sistem Informasi Seminar Tugas Akhir - SISTA</h1>
                     </div>
                 </div>
-                <div class="py-4 col-12">
-                    <nav class="nav">
-                        <a class="px-1 px-md-2 nav-link active" aria-current="page" href="#"><u> Home </u></a>
-                        <span style="border: 1px solid #939393 !important;"></span>
-                        <a class="px-1 px-md-2 nav-link" href="#"> <u> Jadwal </u></a>
-                        <span style="border: 1px solid #939393 !important;"></span>
-                        <a class="px-1 px-md-2 nav-link" href="daftar_seminar.html"> <u> Daftar Seminar </u></a>
-                        <span style="border: 1px solid #939393 !important;"></span>
-                        <a class="px-1 px-md-2 nav-link" href="#"> <u> Berita </u></a>
-                    </nav>
-                </div>
+
             </div>
         </header>
+
+        <div class="row pt-2">
+            <div class="col-12 col-md-8 mx-auto">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/slide.jpg" class="rounded d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/slide2.jpg" class="rounded d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/slide3.jpg" class="rounded d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
 
         <div class="py-4 row">
             <div class="col-12">

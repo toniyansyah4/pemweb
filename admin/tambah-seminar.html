@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tambah Seminar</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/admin.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="title mt-4 text-center">
+                    Sistem Informasi Seminar Tugas Akhir - SISTA
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mt-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Jadwal</a></li>
+                        <li class="breadcrumb-item"><a href="list-seminar.html">Daftar Seminar</a></li>
+                        <li class="breadcrumb-item"><a href="#">Berita</a></li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="col-md-6 mt-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb d-flex justify-content-end">
+                        <li class="breadcrumb-item">Admin</li>
+                        <li class="breadcrumb-item">
+                            <a href="../auth/login.html">Logout</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mt-2">
+                <button class="btn btn-outline-info">Tambah Seminar Baru</button>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h4>Form Daftar Seminar TA</h4>
+            </div>
+        </div>
+        <div class="row mt-2 form-seminar mb-5">
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <label>NIM</label>
+                        <input type="text" class="form-control form-control-sm shadow-sm" placeholder="Masukkan NIM" required />
+                    </div>
+                    <div class="form-group mt-2">
+                        <label>Nama</label>
+                        <input type="text" class="form-control form-control-sm shadow-sm" placeholder="Masukkan Nama" required />
+                    </div>
+                    <div class="form-group mt-2">
+                        <label>Prodi</label>
+                        <select class="form-control form-control-sm shadow-sm" required>
+                <option>Sistem Informasi</option>
+                <option>Teknik Informatika</option>
+              </select>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label>Tanggal Seminar</label>
+                        <input type="date" class="form-control form-control-sm shadow-sm" required />
+                    </div>
+                    <div class="form-group mt-2">
+                        <label>Jam Seminar</label>
+                        <input type="time" class="form-control form-control-sm shadow-sm" required />
+                    </div>
+                    <div class="form-group mt-2">
+                        <label>Ruangan</label>
+                        <input type="text" class="form-control form-control-sm shadow-sm" placeholder="Masukkan Ruangan" required />
+                    </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Judul TA</label>
+                    <textarea class="form-control form-control-sm shadow-sm" rows="4" placeholder="Masukkan Judul" required></textarea>
+                </div>
+                <div class="form-group mt-2">
+                    <label>Seminar</label>
+                    <select class="form-control form-control-sm shadow-sm" required>
+                <option>Proposal</option>
+                <option>Seminar Hasil</option>
+                <option>Seminar Akhir</option>
+              </select>
+                </div>
+                <div class="form-group mt-2">
+                    <label>Pembimbing</label>
+                    <select class="form-control form-control-sm shadow-sm" required>
+                <option>Sirojul Munir S.SI, M.KOM</option>
+              </select>
+                </div>
+                <div class="form-group mt-2">
+                    <label>Penguji 1</label>
+                    <select class="form-control form-control-sm shadow-sm" required>
+                <option>Ahmad Rio M.SI</option>
+              </select>
+                </div>
+                <div class="form-group mt-2">
+                    <label>Penguji 2</label>
+                    <select class="form-control form-control-sm shadow-sm" required>
+                <option>Amalia Rahmah M.T</option>
+              </select>
+                </div>
+            </div>
+            <div class="col-md-12 mt-3">
+                <button class="btn btn-success" type="submit"><a href="list-seminar.html" style="color:white">Update</a></button>
+                <buttton class="btn btn-danger">Hapus</button>
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
