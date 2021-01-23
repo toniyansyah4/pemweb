@@ -11,7 +11,7 @@ menuToggle.addEventListener("click", function() {
 signIn.addEventListener("click", function(e) {
     e.preventDefault();
     if (username.value == "admin" && password.value == 12345) {
-        window.location.href = "../admin/list-seminar.html";
+        window.location.href = "../../admin/list-seminar.html";
     } else {
         alert("Login Gagal");
         username.value = "";
