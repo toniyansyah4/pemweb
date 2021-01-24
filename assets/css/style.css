@@ -40,6 +40,54 @@ body {
   color: var(--c-primary-color);
 }
 
+.color-secondary {
+  color: var(--c-secondary-color);
+}
+
+.list-article-item {
+  color: #000000;
+  position: relative;
+  display: block;
+  height: 500px;
+  box-shadow: 3px 3px 10px rgb(221, 221, 221);
+  margin-bottom: 25px;
+}
+
+.list-article-item .list-article-desc {
+  padding: 15px;
+}
+
+.list-seminar {
+  border: 1px solid #e0e0e0;
+  margin-bottom: 30px;
+  padding: 30px 25px;
+}
+
+.list-seminar h3 {
+  margin-bottom: 18px;
+}
+
+.list-seminar ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.list-seminar ul li {
+  padding: 10px 0;
+}
+
+.list-seminar ul li:not(:last-child) {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.list-seminar ul li a {
+  color: var(--c-secondary-color);
+}
+
+.list-seminar ul li a:hover {
+  color: var(--c-primary-color);
+}
+
 .table-hover tbody tr:hover {
   background-color: var(--c-secondary-color);
   color: #ffffff;
